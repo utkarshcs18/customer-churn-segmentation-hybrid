@@ -31,7 +31,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
     df.drop(columns=["customerID"], inplace=True)
 
     df["TotalCharges"] = pd.to_numeric(df['TotalCharges'], errors="coerce")
-    df["TotalCharges"].fillna(df["TotalCharges"].median())
+    df["TotalCharges"] = df["TotalCharges"].fillna(df["TotalCharges"].median())
 
     return df
 
