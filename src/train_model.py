@@ -74,7 +74,7 @@ def predict_new_customer(new_row_df, kmeans, segment_models, scaler):
     segment = kmeans.predict(new_scaled)[0]
 
     if segment not in segment_models:
-        print(f"⚠️  No model available for Segment {segment} — was skipped during training.")
+        print(f" No model available for Segment {segment} — was skipped during training.")
         return segment, None, None
 
     model = segment_models[segment]
