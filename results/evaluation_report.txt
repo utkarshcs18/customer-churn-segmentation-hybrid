@@ -1,0 +1,10 @@
+HYBRID CHURN MODEL — Evaluation Report
+==================================================
+
+                   Accuracy  Precision  Recall  F1 Score
+Model                                                   
+Global Model         0.8070     0.6584  0.5668    0.6092
+Per-Segment Model    0.8013     0.6526  0.5374    0.5894
+
+Conclusion:
+The global model outperforms the per-segment approach on F1 (-0.0198). The clusters may not be well-separated enough for segment-specific patterns to emerge.
